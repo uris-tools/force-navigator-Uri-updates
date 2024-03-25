@@ -97,7 +97,7 @@ module.exports = {
 		"setup.translationLanguageSettings": "Translation Language Settings",
 		"setup.translate": "Translate",
 		"setup.override": "Override",
-		"setup.export": "Export",
+		"setup.LabelWorkbenchExport": "Translation Workbench Export",
 		"setup.import": "Import",
 		"setup.duplicateErrorLogs": "Duplicate Error Logs",
 		"setup.duplicateRules": "Duplicate Rules",
