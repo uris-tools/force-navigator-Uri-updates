@@ -1894,16 +1894,17 @@ export const sfObjectsGetData = {
 			let objCommands ={}
 			response.records.forEach(f=>{
 				const fieldId = f.DurableId.split(".")[1]
+				const sobjectId = f.DurableId.split(".")[0]
 				const key = "3rdlevel." + f.QualifiedApiName
 				objCommands[key] = {
 					"key": key,
-					"url": `/lightning/setup/ObjectManager/${apiname}/FieldsAndRelationships/${fieldId}/view`,
+					"url": `/lightning/setup/ObjectManager/${sobjectId}/FieldsAndRelationships/${fieldId}/view`,
 					"label": label + " >> " + f.QualifiedApiName,
 					"sortValue" : 0.9  // Will cuase it to appear low on the sort
 				}
 				objCommands[key+ ".fieldLevelSecurity"] = {
 					"key": key + ".fieldLevelSecurity",
-					"url": `/lightning/setup/ObjectManager/${apiname}/FieldsAndRelationships/${fieldId}/edit?standardEdit = true`,
+					"url": `/lightning/setup/ObjectManager/${sobjectId}/FieldsAndRelationships/${fieldId}/edit?standardEdit = true`,
 					"label": label + " >> " + f.QualifiedApiName + " >> Field Level Security",
 					"sortValue" : 0.1  // Will cuase it to appear low on the sort
 				}
