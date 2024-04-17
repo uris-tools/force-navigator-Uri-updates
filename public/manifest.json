@@ -31,7 +31,8 @@
 		"matches": [
 			"https://*.force.com/*",
 			"https://*.salesforce.com/*",
-			"https://*.cloudforce.com/*"
+			"https://*.cloudforce.com/*",
+			"https://*.salesforce-setup.com/*"
 		],
 		"all_frames": true,
 		"js": [
