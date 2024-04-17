@@ -47,7 +47,7 @@
 		"showSearchBox": {
 			"description": "Open Search Box",
 			"suggested_key": {
-				"default": "Ctrl+Shift+Space"
+				"default": "Ctrl+Space"
 			}
 		},
 		"showAppMenu": {
